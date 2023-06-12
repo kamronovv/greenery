@@ -115,12 +115,12 @@
             }
             &__itms:first-child {
                 border: 0.2rem solid $color_darck-charcoal;
-                padding: 0.2rem 2rem;
+                padding: 0.2rem 0rem;
                 
                 
             }
             &__itms:not(:first-child) {
-                padding-left: 4.5rem;
+                padding-left: 3rem;
                 
             }
         }
@@ -128,25 +128,30 @@
          
         &__Single-Sofa {
             &__boxs {
+                padding: 2rem 2rem;
                 background-color: $color-creamre;
                 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
                 border-radius: 3px;
                 &__top-stile {
-                    margin-top: 3rem;
                     display: grid;
-                    grid-template-columns: 85% 20%;
-                    img {
+                    grid-template-columns: 10% 80% 10%;
+                    grid-template-rows: 21rem 1rem;
+                    img {  
                         margin-top: 2.5rem;
-                        margin-left: 4rem;
+                        margin-left: 3rem;
+                    }
+                    &__right {
+                        grid-column: 3 / 4;
+                        margin-top: 2rem;
                     }
                 }
                 &__botton-style {
-                    
+                    grid-column: -3 / -2;           
                     display: grid;
-                    grid-template-columns: 3.8rem 3.8rem 3.8rem 3.8rem;
+                    grid-template-columns: 3.8rem 3.8rem 3.8rem 10rem;
                     column-gap: 2rem;
                     justify-content: center;
-                    img{
+                    img {
                         cursor: pointer;
                         background-color: $color_light-blue;
                         width: 4rem;

@@ -114,7 +114,8 @@
   /* Lazy images */
   .lazy-img {
     filter: blur(15px);
-    transition: 3s;
+    transition: 1s;
+
   }
   .navbar.sticky {
     transition: 1s;
@@ -141,4 +142,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+  }
+  .chayr-2 {
+    padding-left: 5rem;
   }
