@@ -1,0 +1,72 @@
+// Dancing Script
+.font__Da-St_20-700 {
+    @include font__Da-St(2rem, 700);
+ }
+
+
+//  Dosis
+.font__Dosis-25-600 {
+   @include  font__Dosis(2.5rem, 600);
+}
+ .font__Dosis-50-600 {
+    @include  font__Dosis(5rem, 600);
+ }
+ .font__Dosis-40-600 {
+   @include  font__Dosis(5rem, 600);
+   line-height: 5.2rem
+}
+ .font__Dosis-46-600 {
+    @include  font__Dosis(4.6rem, 600);
+ }
+ .font__Dosis-55-600 {
+   @include  font__Dosis(5.5rem, 600);
+}
+ .font__Dosis-60-600 {
+   @include  font__Dosis(6rem, 600);
+}
+ .font__Dosis-90-800 {
+   @include  font__Dosis(9rem, 800);
+}
+ 
+
+//  Mukta
+.font__Mukta-15-400 {
+   @include  font__Mukta(1.5rem, 400);
+}
+ .font__Mukta-30-400 {
+   @include  font__Mukta(1.5rem, 400);
+}
+
+.font__Mukta-17-400 {
+   @include  font__Mukta(1.7rem, 500);
+}
+.font__Mukta-23-400 {
+   @include  font__Mukta(2.3rem, 500);
+}
+.font__Mukta-25-400 {
+   @include  font__Mukta(2.5rem, 500);
+}
+
+
+
+
+
+.btn_ofsh {
+   @include  btn_ofsh();
+}
+
+.btn_adn {
+   @include  btn_adn();
+}
+
+.modol-box {
+   @include modol-box();
+} 
+.modol-zoom-box {
+   @include modol-zoom-box();
+}
+
+
+.modole-close_btn {
+   @include modole-close_btn();
+}

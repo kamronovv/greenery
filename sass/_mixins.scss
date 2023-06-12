@@ -1,0 +1,92 @@
+@mixin font__Da-St($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: 'Dancing Script', cursive;
+  }
+
+@mixin font__Dosis($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: 'Dosis', sans-serif; }
+
+@mixin font__Mukta($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: 'Mukta', sans-serif;
+    }
+    
+
+@mixin btn_ofsh() {
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $color-charcoal;
+  border: solid 0.3rem #4E6E77;
+  border-radius: 0.3rem;
+  background: none;
+  width: 14rem;
+  cursor: pointer;
+
+}
+
+@mixin btn_adn {
+    display: block;
+    margin-top: 2rem;
+    color: #264A51 ;
+    padding: 0.8rem 3.5rem;
+    border: none;
+    border-radius: 1.2rem;
+    cursor: pointer; 
+}
+    
+
+@mixin modol-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  background-color: #264A51;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.4);
+  padding: 4rem 3rem;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 0.5s;
+  border-radius: 1.2rem;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+@mixin modol-zoom-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  background-color: #f6f6f6;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.4);
+  padding: 4rem 3rem;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 0.5s;
+  border-radius: 1.2rem;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+
+@mixin modole-close_btn {
+    position: absolute;
+    top: 0.1rem;
+    right: 1rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: -1rem;
+    display: grid;
+    grid-template-rows: 2rem 2rem 2rem ;
+    z-index: 1;
+}

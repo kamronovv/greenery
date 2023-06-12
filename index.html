@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div class="big_header">
+        <div class="sidebar">
+           <a href="#"> <img  class="sidebar__logo" src="images/svg/Group.svg" alt=""> </a>
+                <ul class="sidebar__lists">
+                    <li class="sidebar__lists__itms" id="section-1"><a href="#"><img src="images/svg/HOME.svg" alt="home"><br> Home</a></li>
+                    <li class="sidebar__lists__itms" id="section-2"><a href="#"><img src="images/svg/SHOP.svg" alt="shop"><br> Shop</a></li>
+                    <li class="sidebar__lists__itms" id="section-3"><a href="#"><img src="images/svg/BLOG.svg" alt="blog"><br> Blog</a></li>
+                    <li class="sidebar__lists__itms" id="section-4"><a href="#"><img src="images/svg/GALERIE.svg" alt="galeria"><br> Gallery</a></li>
+                    <li class="sidebar__lists__itms" id="section-5"><a href="#"><img src="images/svg/ABAUT US.svg" alt="abaut"><br> Abaut Us</a></li>
+                    <li class="sidebar__lists__itms" id="section-6"><a href="#"><img src="images/svg/LOCATION.svg" alt="location"><br> Laction</a></li>
+                </ul>
+
+        </div>
+        <header>      
+            <nav class="navbar">
+                <ul class="navbar__lists">
+                    <li class="navbar__lists__itms btnOpenModls" id="logn-li"><a class="open_btn" href="#">LOGN </a> <img src="images/svg/logn.svg"> </li>
+                    <li class="navbar__lists__itms btnOpenModls" id="search"><a class="open_btn" href="#">SING UP <img src="images/svg/sing UP.svg" alt=""></a></li>
+                </ul>
+                <ul class="navbar__lists right">
+                    <li class="navbar__lists__itms"><a href="#"><img src="images/svg/masseg.svg"> MAILING LIST</a></li>
+                    <li class="navbar__lists__itms btnOpenModls " id="share"><a class="open_btn" href="#"><img src="images/svg/share.svg"> SHARE</a></li>
+                    <li class="navbar__lists__itms btnOpenModls " id="Cart"><a class="open_btn" href="#"><img src="images/svg/cart.svg"> CART</a></li>
+                </ul>
+            </nav>
+
+            <!-- logn-start -->
+            <div class="header-box ">
+                <div class="logn hidden modol-box">
+                    <button id="close_logn" class="font__Dosis-46-600 modole-close_btn">&times;</button>
+                    <h2 class="font__Dosis-55-600">logn</h2>
+                    <div class="logn__form-box">
+                        <form action="logn">
+                            <img src="images/svg/logn.svg" alt="">
+                            <input type="email"id="emile" name="emile" class="emile font__Mukta-25-400 "placeholder="email"/>
+                        </form>
+                        <form action="password">
+                            <img src="images/svg/password.svg" alt="">
+                            <input type="password"id="password" name="password" class="emile font__Mukta-25-400 "placeholder="password"/>
+                        </form>
+                        <button class=" btn_adn font__Mukta-23-400">Serach</button>
+                    </div>
+
+                </div>
+                    <!-- logn-finshed -->
+    
+
+                <!-- sing up -->
+
+                <div class="modal-search hidden modol-box">
+                <button id="close_search" class="font__Dosis-46-600 modole-close_btn ">&times;</button>
+                <h2 class="font__Dosis-55-600">Search products</h2>
+                <form action="search">
+                    <img src="images/search.png">
+                    <input type="text"id="search"class="modal__search--input font__Mukta-25-400 "placeholder="Search products"/>
+                </form>
+                    <button class=" btn_adn font__Mukta-23-400">Serach</button>
+                </div>
+
+                  <!-- sing up finshed -->
+
+                  <!-- modal-share-list start -->
+                <div class="modal-share-list hidden modol-box ">
+                    <button id="close_share" class="font__Dosis-46-600 modole-close_btn ">&times;</button>
+                    <h2 class="font__Dosis-55-600">MAILING LIST</h2>
+                    <div class="modal-share-list__links"> 
+                        <ul>
+                            <li><a href="#"><img src="images/shareLogs/yotube.svg"></a></li>
+                            <a class="font__Mukta-17-400" href="">Yotube</a>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/shareLogs/telegram.svg"></a></li>
+                            <a class="font__Mukta-17-400" href="#">Telegram</a>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/shareLogs/Instagram.svg" alt=""></a></li>
+                            <a class="font__Mukta-17-400" href="#">Instagram</a>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/shareLogs/facebook.svg" alt=""></a></li>
+                            <a class="font__Mukta-17-400" href="#">Facebook</a>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="images/shareLogs/twitch.svg"></a></li>
+                            <a class="font__Mukta-17-400" href="">Twitch</a>
+                        </ul>
+                    </div>
+                    <div class="modal-share-list__capy-src">
+                        <img src="images/shareLogs/link.png" alt="link">
+                        <input class="font__Mukta-25-400" type="text" id="myInput" value="http://127.0.0.1:5501/index.html#">
+                        <button onclick="copyText()" class="font__Mukta-25-400">Capy</button>                 
+                    </div>
+                </div>
+                  <!-- modal-share-list finshed -->
+
+                  <!-- modal-card start -->
+                  <div class="modal-cart hidden modol-box  ">
+                    <button id="close_cart" class="font__Dosis-46-600 modole-close_btn">&times;</button>
+                    <h2 class="font__Dosis-55-600">Cart of Products</h2>
+                    <div class="modal-cart__products"></div>
+                  </div>
+
+
+                <div class="header-box__left">
+                    <h2 class="font__Dosis-55-600">Save The Weekend</h2>
+                    <h1 class="font__Dosis-50-600">Awesome design <br> Best Furniture For <br> Your Interior.</h1>
+                    <button id="ExploreMore" class="btn_ofsh">Explore More</button>
+                </div>
+                <div class="header-box__right">
+                    <img src="images/svg/AROW.svg" alt="">
+                </div>
+            </div>
+    <!-- finshed navbar  -->
+        </header>
+    </div>
+    <!-- header finshed  -->
+
+    <!-- breand zona -->
+    <div class="brean-zona">
+        <img src="images/breand logo/Group.svg" alt="">
+        <img src="images/breand logo/Group (1).svg" alt="">
+        <img src="images/breand logo/Group (2).svg" alt="">
+        <img src="images/breand logo/Group (3).svg" alt="">
+        <img src="images/breand logo/Group (4).svg" alt="">
+        <img src="images/breand logo/Group (5).svg" alt="">
+    </div>
+
+    <!-- main start  -->
+    <main class="main">
+        <section class="shop-box section ">
+            <h1 class="shop-box__title font__Dosis-46-600">Our Products</h1>
+            <ul class="shop-box__list">
+                <li class="shop-box__list__itms"><a href="#">Single Sofa</a></li>
+                <li class="shop-box__list__itms"><a href="#">Living Room</a></li>
+                <li class="shop-box__list__itms"><a href="#">Kitchen</a></li>
+                <li class="shop-box__list__itms"><a href="#">Bed Room</a></li>
+                <li class="shop-box__list__itms"><a href="#">Bath Room</a></li>
+                <li class="shop-box__list__itms"><a href="#">Decorations</a></li>
+                <li class="shop-box__list__itms"><a href="#">Ceramics</a></li>
+            </ul>
+            <div class="shop-box__Single-Sofa lazy-img collection">
+                <!-- box-1 -->
+                <div class="shop-box__Single-Sofa__boxs">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile">
+                        <img class="cheare-1" src="images/cheare-1.png" alt="">
+                        <div class="shop-box__Single-Sofa__boxs__top-stile__right">
+                            <div class="discount"><p>-20%</p></div>
+                            <div class="new"><p>New</p></div>
+                        </div>
+                        
+                        
+                        <div class="shop-box__Single-Sofa__boxs__botton-style">
+                            <img class="btnOpenModls open_btn" id="zoom-1" src="images/svg/icons-shop/zoom.svg" alt="">
+                            <img src="images/svg/icons-shop/statistika.svg" alt="">
+                            <img onclick = "swapImages1()" src = "images/svg/icons-shop/like.svg" id = "getImage1">              
+                            <img src="images/svg/icons-shop/shopimg.svg" alt="">
+                        </div>
+                        <div class="modol-zoom-box zoomSofa-1 hidden">
+                            <img src="images/cheare-1.png">
+                        </div>
+                        
+                        
+                    </div>
+                        
+                    <!-- box-2 -->
+                </div>
+                <div class="shop-box__Single-Sofa__boxs">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile">
+                    <img class="chayr-2" src="images/cheare-2.png" alt="">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile__right">
+                        <div class="discount"><p>-20%</p></div>
+                        <div class="new"><p>New</p></div>
+                    </div>
+                    <div class="shop-box__Single-Sofa__boxs__botton-style">
+                        <img class="btnOpenModls open_btn" id="zoom-2" src="images/svg/icons-shop/zoom.svg" alt="">
+                        <img src="images/svg/icons-shop/statistika.svg" alt="">
+                        <img  onclick = "swapImages2()" src = "images/svg/icons-shop/like.svg" id = "getImage2">
+                        <img src="images/svg/icons-shop/shopimg.svg" alt="">
+                    </div>
+                    <div class="modol-zoom-box zoomSofa-2 hidden">
+                        <img src="images/cheare-2.png">
+                    </div>
+                </div>
+            </div>
+            <!-- box-3 -->
+                <div class="shop-box__Single-Sofa__boxs">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile">
+                    <img class="chayr-3" src="images/cheare-3.png" alt="">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile__right">
+                        <div class="discount"><p>-20%</p></div>
+                        <div class="new"><p>New</p></div>
+                    </div>
+                    <div class="shop-box__Single-Sofa__boxs__botton-style">
+                        <img class="btnOpenModls open_btn" id="zoom-3" src="images/svg/icons-shop/zoom.svg" alt="">
+                        <img src="images/svg/icons-shop/statistika.svg" alt="">
+                        <img onclick = "swapImages3()" src = "images/svg/icons-shop/like.svg" id = "getImage3">
+                        <img src="images/svg/icons-shop/shopimg.svg" alt="">
+                    </div>
+                    <div class="modol-zoom-box zoomSofa-3 hidden">
+                        <img src="images/cheare-3.png">
+                    </div>
+                </div>
+            </div>
+            <!-- box-info -->
+                <div class="shop-box__Single-Sofa__infos">
+                    <p class="font__Mukta-15-400"> Single Sofa <br> £423.00</p>
+                    <img src="images/svg/stars.svg" alt="">
+                </div>
+                <div class="shop-box__Single-Sofa__infos">
+                    <p class="font__Mukta-15-400"> Single Sofa <br> £423.00</p>
+                    <img src="images/svg/stars.svg" alt="">
+                </div>
+                <div class="shop-box__Single-Sofa__infos">
+                    <p class="font__Mukta-15-400"> Single Sofa <br> £423.00</p>
+                    <img src="images/svg/stars.svg" alt="">
+                </div>
+                <!-- box-4 -->
+                <div class="shop-box__Single-Sofa__boxs">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile">
+                    <img src="images/cheare-4.png" alt="">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile__right">
+                        <div class="discount"><p>-20%</p></div>
+                        <div class="new"><p>New</p></div>
+                    </div>
+                    <div class="shop-box__Single-Sofa__boxs__botton-style">
+                        <img class="btnOpenModls open_btn" id="zoom-4" src="images/svg/icons-shop/zoom.svg" alt="">
+                        <img src="images/svg/icons-shop/statistika.svg" alt="">
+                        <img onclick = "swapImages4()" src = "images/svg/icons-shop/like.svg" id = "getImage4">
+                        <img src="images/svg/icons-shop/shopimg.svg" alt="">
+                    </div>
+                    <div class="modol-zoom-box zoomSofa-4 hidden">
+                        <img src="images/cheare-4.png">
+                    </div>
+                </div>
+            </div>
+            <!-- box-5 -->
+                <div class="shop-box__Single-Sofa__boxs">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile">
+                    <img class="chayr-5" src="images/cheare-5.png" alt="">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile__right">
+                        <div class="discount"><p>-20%</p></div>
+                        <div class="new"><p>New</p></div>
+                    </div>
+                    <div class="shop-box__Single-Sofa__boxs__botton-style">
+                        <img class="btnOpenModls open_btn" id="zoom-5" src="images/svg/icons-shop/zoom.svg" alt="">
+                        <img src="images/svg/icons-shop/statistika.svg" alt="">
+                        <img onclick = "swapImages5()" src = "images/svg/icons-shop/like.svg" id = "getImage5">
+                        <img src="images/svg/icons-shop/shopimg.svg" alt="">
+                    </div>
+                    <div class="modol-zoom-box zoomSofa-5 hidden">
+                        <img src="images/cheare-5.png">
+                    </div>
+                </div>
+            </div>
+            <!-- box-6 -->
+                <div class="shop-box__Single-Sofa__boxs">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile">
+                    <img class="chayr-6" src="images/cheare-6.png" alt="">
+                    <div class="shop-box__Single-Sofa__boxs__top-stile__right">
+                        <div class="discount"><p>-20%</p></div>
+                        <div class="new"><p>New</p></div>
+                    </div>
+                    <div class="shop-box__Single-Sofa__boxs__botton-style">
+                        <img class="btnOpenModls open_btn" id="zoom-6" src="images/svg/icons-shop/zoom.svg" alt="">
+                        <img src="images/svg/icons-shop/statistika.svg" alt="">
+                        <img onclick = "swapImages6()" src = "images/svg/icons-shop/like.svg" id = "getImage6">
+                        <img src="images/svg/icons-shop/shopimg.svg" alt="">
+                    </div>
+                    <div class="modol-zoom-box zoomSofa-6 hidden">
+                        <img src="images/cheare-6.png">
+                    </div>
+                </div>
+              </div>
+             <!-- box-info -->
+              <div class="shop-box__Single-Sofa__infos">
+                <p class="font__Mukta-15-400"> Single Sofa <br> £423.00</p>
+                <img src="images/svg/stars.svg" alt="">
+            </div>
+            <div class="shop-box__Single-Sofa__infos">
+                <p class="font__Mukta-15-400"> Single Sofa <br> £423.00</p>
+                <img src="images/svg/stars.svg" alt="">
+            </div>
+            <div class="shop-box__Single-Sofa__infos">
+                <p class="font__Mukta-15-400"> Single Sofa <br> £423.00</p>
+                <img src="images/svg/stars.svg" alt="">
+            </div>
+            </div>
+        </section>
+        
+        
+        
+
+
+
+    </main>
+
+    <!-- <section class="blog-box sections ">
+        
+    </section> -->
+    <section class=" section blog-box collection lazy-img" id="#section-3">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="blog-box__texts">
+                <h1 class="font__Dosis-90-800">50% OFF</h1>
+                <h2 class="font__Dosis-60-600">Weekend Trendy Sofa</h2>
+                <p class="font__Mukta-15-400">Contrary to popular belief, Lorem Ipsum is not simply <br>
+                    random text. literature from 45 BC, making it over 2000  <br>
+                    years old. Richard McClintock, a Latin.</p>
+                    <button class="btn_ofsh">View Items</button>
+            </div>
+            <div class="numbertext">1 / 3</div>
+            <img class="slider-img-b_g-1" src="images/baground.jpg">
+            
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="blog-box__texts">
+                <h1 class="font__Dosis-90-800">50% OFF</h1>
+                <h2 class="font__Dosis-60-600">Weekend Trendy Sofa</h2>
+                <p class="font__Mukta-15-400">Contrary to popular belief, Lorem Ipsum is not simply <br>
+                    random text. literature from 45 BC, making it over 2000  <br>
+                    years old. Richard McClintock, a Latin.</p>
+                    <button class="btn_ofsh">View Items</button>
+            </div>
+            <div class="numbertext">2 / 3</div>
+            <img class="slider-img-b_g-2" src="images/baground-2.jpg">
+           
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="blog-box__texts">
+                <h1 class="font__Dosis-90-800">50% OFF</h1>
+                <h2 class="font__Dosis-60-600">Weekend Trendy Sofa</h2>
+                <p class="font__Mukta-15-400">Contrary to popular belief, Lorem Ipsum is not simply <br>
+                    random text. literature from 45 BC, making it over 2000  <br>
+                    years old. Richard McClintock, a Latin.</p>
+                    <button class="btn_ofsh">View Items</button>
+            </div>
+            <div class="numbertext">3 / 3</div>
+            <img class="slider-img-b_g-3" src="images/baground-3.jpg" style="width:100%">
+           
+          </div>
+          <div class="dots-sl"">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          </div>
+          
+      </section>    
+
+    <main class="main">
+        <!-- GALERY-BOX-1 -->
+        <section class="gallery-box section">
+            <div class="gallery-box__left lazy-img collection">
+                <img src="images/img-1.jpg" alt="">
+            </div>
+            <div class="gallery-box__blue-box">
+                <h1 class="font__Dosis-25-600">Living</h1>
+            </div>
+            <div class="gallery-box__right">
+                <h1 class="font__Dosis-40-600">Living Room Items</h1>
+                <P class="font__Mukta-30-400">Contrary to popular belief, Lorem Ipsum is not simply
+                    random text. It has roots in a piece of classical Latin 
+                    literature from 45  professor at Hampden-Sydney College in 
+                    Virginia, looked up one of the more obscure Latin words, consectetur.</P>
+                    <button class="btn_ofsh">Read More</button>
+            </div>
+        </section>
+        <!-- GALERY-BOX-2 -->
+        <div class="gallery-box_2 rotate">
+            <div class="gallery-box_2__left lazy-img collection">
+                <img src="images/img-2.jpg" alt="">
+            </div>
+            <div class="gallery-box__blue-box_2 ">
+                <h1 class="font__Dosis-25-600 rotate__text">Dining </h1>
+            </div>
+            <div class="gallery-box_2__right">
+                <h1 class="font__Dosis-40-600 rotate__text ">Trendy Dining Table</h1>
+                <P class="font__Mukta-30-400 rotate__text ">Contrary to popular belief,
+                     Lorem Ipsum is not simply random text. literature from 45 BC, making it
+                      over 2000 years old. <br> Richard McClintock, a Latin.</P>
+                    <button class=" rotate__text btn_ofsh">View Items</button>
+            </div>
+        </div>
+        <!-- GALERY-BOX-3 -->
+        <div class="gallery-box_2">
+            <div class="gallery-box_2__left lazy-img collection">
+                <img src="images/img-3.jpg" alt="">
+            </div>
+            <div class="gallery-box__blue-box_2 ">
+                <h1 class="font__Dosis-25-600 ">Bed </h1>
+            </div>
+            <div class="gallery-box_2__right">
+                <h1 class="font__Dosis-40-600  ">Modern Bed</h1>
+                <P class="font__Mukta-30-400  ">Contrary to popular belief, 
+                    Lorem Ipsum is not simply random text. literature from 45 BC, 
+                    making it over 2000 years old. <br> Richard McClintock, a Latin.</P>
+                    <button class="  btn_ofsh">Read More</button>
+            </div>
+        </div>
+        <!-- GALERY-BOX-4 -->
+        <div class="gallery-box_2 rotate">
+            <div class="gallery-box_2__left lazy-img collection">
+                <img src="images/img-2.jpg" alt="">
+            </div>
+            <div class="gallery-box__blue-box_2 ">
+                <h1 class="font__Dosis-25-600 rotate__text">Kitchen  </h1>
+            </div>
+            <div class="gallery-box_2__right">
+                <h1 class="font__Dosis-40-600 rotate__text ">Populer kitchen Items</h1>
+                <P class="font__Mukta-30-400 rotate__text ">Contrary to popular belief, Lorem Ipsum is
+                     not simply random text. literature from 45 BC, making it over 2000 years old. <br> Richard
+                      McClintock, a Latin.</P>
+                    <button class=" rotate__text btn_ofsh">View Items</button>
+            </div>
+        </div>
+    </main>
+    <div class="overlay hidden"></div>
+    <section class="lacation-box collection lazy-img ">
+        <h1 class="font__Dosis-46-600">Get 30% Off</h1>
+        <p class="font__Mukta-30-400">Contrary to popular belief, Lorem Ipsum is not simply <br>  years old. Richard McClintock, a Latin.</p>
+        <input type="text" placeholder="Enter Your Email">
+        <button class="font__Mukta-17-400">Subscrive</button>
+    </section>
+
+    <div class="scroll-up scroll-up--hidden">
+        <img src="images/scrol-up.png" alt="">
+      </div>
+</body>
+</html>

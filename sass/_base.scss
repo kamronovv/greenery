@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;500;600;700;800&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+$color-creamre:#F1F6F9;
+$color_darck-gray:#748289;
+$bg_color_Carolina-blue:#D2E2EE;
+$color-charcoal:#264A51;
+$color_darck-charcoal:#3E5860;
+$bg_color_charcoal:#002A32;
+$bg_color_light_blue:#3C6C7F;
+$color_cerulean:#B6DCFF;
+$color_Cosmic-latte:#F3F3F3;
+$color_light-blue:#71B3C6;
+$color_golt:#F3B705;
+$color_text:#335E74;
+$white-color:#fff;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  :root {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px = 16px/62.%
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $color_Cosmic-latte;
+    // overflow-x: hidden;
+  }
+
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  header {
+    padding: 0 12rem ;
+    background-image: url(/images/header-img.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    background-position: right;
+}
+
+.brean-zona {
+    background-color: $bg_color_Carolina-blue;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 15rem;
+}
+
+
+.slider-img-b_g-1 {  
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.slider-img-b_g-2 {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+.slider-img-b_g-3 {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  
+}

@@ -1,0 +1,144 @@
+.discount {
+    background-color: $color-charcoal;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff ;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.new {
+    margin-top: 1.4rem;
+    background-color: #71B3C6;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff ;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.btn_ofsh{
+    @include  btn_ofsh();
+}
+
+.rotate {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.rotate__text  {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.gallery-box__blue-box {
+    color: #fff;
+    background-color: #71b3c6e3;
+    text-align: center;
+    align-items: center;
+    width: 13rem;
+    height: 15rem;
+    display: grid;
+    transform: translate(1px,250%);
+    z-index: 1;
+    margin-left: -12rem;
+}
+.gallery-box__blue-box_2 {
+    color: #fff;
+    background-color: #71b3c6e3;
+    text-align: center;
+    align-items: center;
+    width: 13rem;
+    height: 15rem;
+    display: grid;
+    transform: translate(1px,120%);
+    z-index: 1;
+    margin-left: -4rem;
+}
+
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+
+
+.scroll-up {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+
+  background-image: linear-gradient(135deg, #09a6da, #042c5c);
+  padding: 2rem;
+  border: 0.3rem solid var(--gray-color);
+  border-radius: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.scroll-up--hidden {
+    transform: translateY(10.1rem);
+  }
+  
+  .scroll-up:hover {
+    cursor: pointer;
+  }
+  
+ 
+  
+  /* Lazy images */
+  .lazy-img {
+    filter: blur(15px);
+    transition: 3s;
+  }
+  .navbar.sticky {
+    transition: 1s;
+    position: fixed;
+    background-image: linear-gradient(
+      74.79deg,
+      #3C6C7F -7.33%,
+      #71B3C6 90.21%
+    );
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 12.5%;
+    z-index: 20;
+  }
+
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  .last__collection {
+    padding: 7.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
